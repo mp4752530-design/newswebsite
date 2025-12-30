@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import NewsBoard from "./src/components/NewsBoard"; // must match filename exactly
-import Navbar from "./src/Components/Navbar";
+import { useState } from "react";
+import Navbar from "./Components/Navbar";
+import NewsBoard from "./Components/NewsBoard";
 
 const App = () => {
   const [category, setCategory] = useState("general");
 
   return (
-    <div>
+    <>
       <Navbar setCategory={setCategory} />
       <NewsBoard category={category} />
-    </div>
+    </>
   );
 };
 
