@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
-import Newsboard from "./Components/Newsboard";
+import Boardnews from "./components/Boardnews";
+
 
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
   return (
     <>
       <Navbar setCategory={setCategory} />
-      <Newsboard category={category} />
+      <Boardnews category={category} />
     </>
   );
 };
