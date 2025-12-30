@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import NewsItems from './NewsItems';
 
-const Boardnews = ({ category }) => {
+const NewsBoard = ({ category }) => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState([]);
 
@@ -49,4 +49,4 @@ const Boardnews = ({ category }) => {
   );
 };
 
-export default Boardnews;
+export default NewsBoard;
